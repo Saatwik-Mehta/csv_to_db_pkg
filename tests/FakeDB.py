@@ -3,7 +3,7 @@ import unittest
 from unittest.mock import patch
 import mysql.connector
 from mysql.connector import errorcode
-from src.csv_to_db_converter import crud_operation_db
+from csv_to_db_converter.crud_operation_db import config as crud_operation_config
 
 MYSQL_USER = "root"
 MYSQL_PASSWORD = "saatwik"
@@ -99,7 +99,7 @@ class My_DB(unittest.TestCase):
             'password': MYSQL_PASSWORD,
 
         }
-        cls.mock_db_config = patch.dict(crud_operation_db.config, testconfig)
+        cls.mock_db_config = patch.dict(crud_operation_config, testconfig)
 
     @classmethod
     def tearDownClass(cls):
