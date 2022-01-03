@@ -3,7 +3,7 @@ can use for their database table. It mainly required the nme of the DB and datas
 
 import logging
 from typing import List
-
+import os
 from mysql import connector
 
 logging.basicConfig(filename='CRUD_operation.log',
@@ -14,10 +14,9 @@ logging.basicConfig(filename='CRUD_operation.log',
                            ' Line %(lineno)d-> %(message)s')
 
 config = {
-    'host': 'localhost',
-    'user': 'root',
-    'password': 'saatwik',
-
+    'host': os.getenv('HOST'),
+    'user': os.getenv('USER'),
+    'password': os.getenv('PASSWORD'),
 }
 
 

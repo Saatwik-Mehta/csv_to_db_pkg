@@ -8,3 +8,26 @@
 2022-01-03 13:22:16,154: ERROR: crud_operation_db.py-> delete_db_data-> Line 133-> TypeError: expression value is:[3356]
 2022-01-03 13:22:16,172: WARNING: crud_operation_db.py-> delete_db_data-> Line 126-> expression value is: [{'setgwett': 'asddgf vqeet'}]
 2022-01-03 13:22:16,173: ERROR: crud_operation_db.py-> delete_db_data-> Line 133-> TypeError: expression value is:[{'setgwett': 'asddgf vqeet'}]
+2022-01-04 00:02:23,379: ERROR: crud_operation_db.py-> create_db_data-> Line 239-> ProgrammingError: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1234.None (id,title,original_title,original_title_romanised,image,movie_banner,d' at line 1
+2022-01-04 00:02:23,401: ERROR: crud_operation_db.py-> create_db_data-> Line 239-> ProgrammingError: 1049 (42000): Unknown database 'none'
+2022-01-04 00:02:23,476: ERROR: crud_operation_db.py-> delete_db_data-> Line 136-> ProgrammingError: 1054 (42S22): Unknown column 'ids' in 'where clause'
+2022-01-04 00:02:23,491: ERROR: crud_operation_db.py-> delete_db_data-> Line 139-> DataError: 1292 (22007): Truncated incorrect DOUBLE value: 'id_2'
+2022-01-04 00:02:23,506: WARNING: crud_operation_db.py-> delete_db_data-> Line 126-> expression value is: 123
+2022-01-04 00:02:23,506: ERROR: crud_operation_db.py-> delete_db_data-> Line 133-> TypeError: expression value is:123
+2022-01-04 00:02:23,520: WARNING: crud_operation_db.py-> delete_db_data-> Line 126-> expression value is: 
+2022-01-04 00:02:23,520: ERROR: crud_operation_db.py-> delete_db_data-> Line 133-> TypeError: expression value is:
+2022-01-04 00:02:23,535: WARNING: crud_operation_db.py-> delete_db_data-> Line 126-> expression value is: [3356]
+2022-01-04 00:02:23,535: ERROR: crud_operation_db.py-> delete_db_data-> Line 133-> TypeError: expression value is:[3356]
+2022-01-04 00:02:23,549: WARNING: crud_operation_db.py-> delete_db_data-> Line 126-> expression value is: [{'setgwett': 'asddgf vqeet'}]
+2022-01-04 00:02:23,549: ERROR: crud_operation_db.py-> delete_db_data-> Line 133-> TypeError: expression value is:[{'setgwett': 'asddgf vqeet'}]
+2022-01-04 00:02:23,622: ERROR: crud_operation_db.py-> create_db_data-> Line 242-> IntegrityError: 1062 (23000): Duplicate entry 'id_2' for key 'test_table.PRIMARY'
+2022-01-04 00:02:23,638: ERROR: crud_operation_db.py-> create_db_data-> Line 239-> ProgrammingError: 1054 (42S22): Unknown column 'extra' in 'field list'
+2022-01-04 00:02:23,652: ERROR: crud_operation_db.py-> create_db_data-> Line 251-> AttributeError: 'list' object has no attribute 'keys'
+2022-01-04 00:02:23,713: ERROR: crud_operation_db.py-> view_db_data-> Line 86-> ProgrammingError: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.wrong tanle' at line 1
+2022-01-04 00:02:23,728: ERROR: crud_operation_db.py-> view_db_data-> Line 86-> ProgrammingError: 1054 (42S22): Unknown column 'tititit' in 'field list'
+2022-01-04 00:02:23,744: ERROR: crud_operation_db.py-> view_db_data-> Line 86-> ProgrammingError: 1054 (42S22): Unknown column 'e3e' in 'where clause'
+2022-01-04 00:02:23,808: WARNING: crud_operation_db.py-> update_db_data-> Line 193-> set_value:None target_exp:None
+2022-01-04 00:02:23,822: WARNING: crud_operation_db.py-> update_db_data-> Line 193-> set_value:['original_title', 'an original title'] target_exp:None
+2022-01-04 00:02:23,836: WARNING: crud_operation_db.py-> update_db_data-> Line 193-> set_value:[] target_exp:[]
+2022-01-04 00:02:23,851: WARNING: crud_operation_db.py-> update_db_data-> Line 193-> set_value:34567 target_exp:576547
+2022-01-04 00:02:23,868: ERROR: crud_operation_db.py-> update_db_data-> Line 201-> IntegrityError: 1062 (23000): Duplicate entry 'id_2' for key 'test_table.PRIMARY'

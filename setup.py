@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="csv-to-db-converter-saatwikmehta",
-    version="0.0.9",
+    version="0.1.0",
     author="Saatwik Mehta",
     author_email="saatwikmehta@gmail.com",
     description="This package is useful for someone who wants to make changes inside his CSV files."

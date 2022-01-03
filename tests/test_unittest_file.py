@@ -1,10 +1,13 @@
 """ This module contains the unit testing of CRUD operation functions.
  It includes both negative test cases and positive test case"""
 import mysql.connector
-
+import os
+# os.environ['HOST'] = 'localhost'
+# os.environ['PASSWORD'] = 'saatwik'
+# os.environ['USER'] = 'root'
 from src.csv_to_db_converter.crud_operation_db import view_db_data, create_db_data, update_db_data, delete_db_data
-from FakeDB import My_DB
-from myfakedata import Value1, Value2, Value3, Value4, Value6
+from tests.FakeDB import My_DB
+from tests.myfakedata import Value1, Value2, Value3, Value4, Value6
 
 EMPTY_LIST = []
 

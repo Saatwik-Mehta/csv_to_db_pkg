@@ -1,14 +1,15 @@
 import sys
+import os
 import unittest
 from unittest.mock import patch
 import mysql.connector
 from mysql.connector import errorcode
 from src.csv_to_db_converter.crud_operation_db import config as crud_operation_config
 
-MYSQL_USER = "root"
-MYSQL_PASSWORD = "saatwik"
+MYSQL_USER = os.getenv('USER')
+MYSQL_PASSWORD = os.getenv('PASSWORD')
 MYSQL_DB = 'Fake_DB'
-MYSQL_HOST = "localhost"
+MYSQL_HOST = os.getenv('HOST')
 
 
 class My_DB(unittest.TestCase):
