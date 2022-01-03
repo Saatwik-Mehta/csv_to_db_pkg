@@ -3,7 +3,7 @@ import unittest
 from unittest.mock import patch
 import mysql.connector
 from mysql.connector import errorcode
-from csv_to_db_converter.crud_operation_db import config as crud_operation_config
+from src.csv_to_db_converter.crud_operation_db import config as crud_operation_config
 
 MYSQL_USER = "root"
 MYSQL_PASSWORD = "saatwik"
