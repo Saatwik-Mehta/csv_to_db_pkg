@@ -4,8 +4,8 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="csvtodb-converter-saatwikmehta",
-    version="0.0.3",
+    name="csv-to-db-converter-saatwikmehta",
+    version="0.0.7",
     author="Saatwik Mehta",
     author_email="saatwikmehta@gmail.com",
     description="This package is useful for someone who wants to make changes inside his CSV files."
@@ -15,7 +15,10 @@ setuptools.setup(
                 ,
     long_description=long_description,
     long_description_content_type="text/markdown",
-
+    url="https://github.com/Saatwik-Mehta/csv_to_db_pkg",
+    project_urls={
+        "Bug Tracker": "https://github.com/Saatwik-Mehta/csv_to_db_pkg/issues",
+    },
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
@@ -23,5 +26,6 @@ setuptools.setup(
     ],
     package_dir={"": "src"},
     packages=setuptools.find_packages(where="src"),
+    install_requires=['mysql-connector-python', 'Jinja2', 'pandas'],
     python_requires=">=3.7",
 )
