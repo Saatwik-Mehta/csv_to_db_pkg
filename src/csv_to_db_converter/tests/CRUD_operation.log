@@ -1,0 +1,10 @@
+2022-01-03 13:22:16,077: ERROR: crud_operation_db.py-> delete_db_data-> Line 136-> ProgrammingError: 1054 (42S22): Unknown column 'ids' in 'where clause'
+2022-01-03 13:22:16,096: ERROR: crud_operation_db.py-> delete_db_data-> Line 139-> DataError: 1292 (22007): Truncated incorrect DOUBLE value: 'id_1'
+2022-01-03 13:22:16,114: WARNING: crud_operation_db.py-> delete_db_data-> Line 126-> expression value is: 123
+2022-01-03 13:22:16,114: ERROR: crud_operation_db.py-> delete_db_data-> Line 133-> TypeError: expression value is:123
+2022-01-03 13:22:16,133: WARNING: crud_operation_db.py-> delete_db_data-> Line 126-> expression value is: 
+2022-01-03 13:22:16,134: ERROR: crud_operation_db.py-> delete_db_data-> Line 133-> TypeError: expression value is:
+2022-01-03 13:22:16,153: WARNING: crud_operation_db.py-> delete_db_data-> Line 126-> expression value is: [3356]
+2022-01-03 13:22:16,154: ERROR: crud_operation_db.py-> delete_db_data-> Line 133-> TypeError: expression value is:[3356]
+2022-01-03 13:22:16,172: WARNING: crud_operation_db.py-> delete_db_data-> Line 126-> expression value is: [{'setgwett': 'asddgf vqeet'}]
+2022-01-03 13:22:16,173: ERROR: crud_operation_db.py-> delete_db_data-> Line 133-> TypeError: expression value is:[{'setgwett': 'asddgf vqeet'}]
