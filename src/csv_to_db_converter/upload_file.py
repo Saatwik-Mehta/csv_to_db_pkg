@@ -21,8 +21,8 @@ logging.basicConfig(filename='CRUD_operation.log',
                            ' %(funcName)s->'
                            ' Line %(lineno)d-> %(message)s')
 
-from .csv_db import csv_to_db as file_db
-from .crud_operation_db \
+from csv_db import csv_to_db as file_db
+from crud_operation_db \
     import view_db_data, \
     delete_db_data, \
     update_db_data, \

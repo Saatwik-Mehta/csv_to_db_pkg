@@ -9,7 +9,7 @@ After a successful upload user can perform CRUD operations on the file data usin
 pip install csv-to-db-converter-saatwikmehta
 ```
 ----
-### STEPS TO MODIFY WITH PROJECT 
+### STEPS TO INSTALL & MODIFY THE PROJECT 
 * Activate your python venv
 * Install the requirements given:
     ```python
@@ -17,10 +17,14 @@ pip install csv-to-db-converter-saatwikmehta
     ```
 * **Mysql** is the main component for storing data
   * Set env variables
-    `$env:HOST= your hostname for mysql`
-    `$env:USER= your username`
-    `$env:PASSWORD= your password`
+  <br/>`$env:HOST= your hostname for mysql`
+  <br/>`$env:USER= your username`
+  <br/>`$env:PASSWORD= your password`
   
+* Run server inside directory file upload_file.py
+```python
+python upload_file.py
+```
 ----
 ## License 
 © 2022 Saatwik Mehta
