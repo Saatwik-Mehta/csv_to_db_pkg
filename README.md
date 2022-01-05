@@ -1,6 +1,6 @@
 # CSV_TO_DB_CONVERTER
-It takes a CSV file as input and converts 
-and save the data into a default set DB (fileupload).
+It takes a CSV file as input, converts 
+and save the data into a default set Database (`fileupload`).
 The table name will consist of the name of the file user is uploading.
 After a successful upload user can perform CRUD operations on the file data using a localhost server.
 ----
@@ -21,7 +21,7 @@ pip install csv-to-db-converter-saatwikmehta
   <br/>`$env:USER= your username`
   <br/>`$env:PASSWORD= your password`
   
-* Run server inside directory file upload_file.py
+* Run server inside directory file [upload_file.py](src/csv_to_db_converter/upload_file.py)
 ```python
 python upload_file.py
 ```
