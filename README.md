@@ -29,6 +29,6 @@ python upload_file.py
 ## License 
 © 2022 Saatwik Mehta
 
-This repository is licensed under the MIT license. See LICENSE for details.
+This repository is licensed under the MIT license. See [LICENSE](LICENSE) for details.
 
 
