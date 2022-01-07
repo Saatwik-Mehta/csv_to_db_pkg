@@ -21,8 +21,8 @@ logging.basicConfig(filename='CRUD_operation.log',
                            ' %(funcName)s->'
                            ' Line %(lineno)d-> %(message)s')
 
-from csv_db import csv_to_db as file_db
-from crud_operation_db \
+from .csv_db import csv_to_db as file_db
+from .crud_operation_db \
     import view_db_data, \
     delete_db_data, \
     update_db_data, \
@@ -55,7 +55,7 @@ class HttpRequestToResponse(BaseHTTPRequestHandler):
                 self.send_response(200, message="this is message")
                 self.send_header('content-type', 'text/html')
                 self.end_headers()
-                with open('Templates/index.html', 'r', encoding="utf-8") as index_html:
+                with open('/Templates/index.html', 'r', encoding="utf-8") as index_html:
                     output = index_html.read()
                 self.wfile.write(output.encode())
             if self.path.endswith('/upload'):
@@ -63,7 +63,7 @@ class HttpRequestToResponse(BaseHTTPRequestHandler):
                 self.send_header('content-type', 'text/html')
                 self.end_headers()
 
-                with open('Templates/uploadfile.html', 'r', encoding="utf-8") as upload_file:
+                with open('/Templates/uploadfile.html', 'r', encoding="utf-8") as upload_file:
                     output = upload_file.read()
                 self.wfile.write(output.encode())
 
@@ -76,7 +76,7 @@ class HttpRequestToResponse(BaseHTTPRequestHandler):
                                      filter_data=self.filter_data)
 
                 if table is not None:
-                    with open('Templates/update_and_delete_row.html', 'r', encoding='utf-8')\
+                    with open('/Templates/update_and_delete_row.html', 'r', encoding='utf-8')\
                             as view_file:
                         output = view_file.read()
                     render_output = jinja2.Template(output)
@@ -95,7 +95,7 @@ class HttpRequestToResponse(BaseHTTPRequestHandler):
                     cursor = conn.cursor()
                     cursor.execute(f'SELECT * FROM fileupload.{table_name}')
                     db_column = cursor.column_names
-                    with open('Templates/create_new_row.html', 'r', encoding='utf-8')\
+                    with open('/Templates/create_new_row.html', 'r', encoding='utf-8')\
                             as create_row_file:
                         output = create_row_file.read()
                     render_output = jinja2.Template(output)
